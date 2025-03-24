@@ -30,3 +30,24 @@ footer {
     padding: 1rem 0;
     margin-top: 20px;
 }
+
+/* Footer styles */
+hr {
+    border-top: 1px solid rgba(0, 0, 0, 0.1);
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+footer {
+    font-family: montserrat, sans-serif;
+}
+
+.visitor-counter {
+    padding: 10px;
+}
+
+#visitor-count {
+    color: #007bff;
+    font-size: 1.2rem;
+}
