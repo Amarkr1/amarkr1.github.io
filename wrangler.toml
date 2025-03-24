@@ -1,0 +1,7 @@
+name = "amarkr"
+main = "src/index.js"
+compatibility_date = "2025-03-24"
+
+kv_namespaces = [
+  { binding = "VISITOR_COUNTER_AMAR", id = "9de6ce757d314d00b5da812dbce1d209" }
+]
