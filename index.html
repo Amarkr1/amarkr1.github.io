@@ -53,10 +53,16 @@
         <div class="col-md-12 col-sm-12">
             <div class="row mt-4 ml-4 mr-4 mb-2">
                 <div class="col-md-4 col-sm-12 text-center">
-                    <!-- Profile Image -->
-                    <div class="pt-5 pb-5 pl-5 pr-5">
-                        <img alt="Profile Image" src="images/profile.jpg" class="rounded-circle img-fluid max-width:40% height:auto" />
+                    
+                    <div class="pt-4 pb-4">
+                        <div class="headshot-container">
+                            <div class="headshot-frame">
+                                <img alt="Profile Image" src="images/profile.jpg" class="headshot-image" />
+                                <div class="headshot-overlay"></div>
+                            </div>
+                        </div>
                     </div>
+
                     <!-- Socials -->
                     <div class="row">
                         <div class="col-md-12 mt-1 mb-2 text-center">
@@ -221,20 +227,18 @@
                             </div>
                         </div>
                         <div class="col-md-8">
+
+                            
+
                             <!-- Publication Entry 1 -->
                             <div class="publication-entry mb-4 p-3 bg-light rounded shadow-sm">
                                 <div class="row">
-                                    <div class="col-md-3">
-                                        <!-- Clickable thumbnail image with link to open in new tab -->
-                                        <a href="assets/prism/arch_v2.png" target="_blank" title="View full image">
-                                            <img src="assets/prism/arch_v2.png" alt="PRISM Thumbnail" class="img-fluid rounded mb-2 thumbnail-img">
-                                        </a>
-                                    </div>
-                                    <div class="col-md-9">
+                                    <div class="col-md-12">
                                         <h4>
                                             <a href="https://openreview.net/forum?id=UpJMAlZNuo" class="link-primary text-decoration-none" target="_blank">PRISM: High-Resolution & Precise Counterfactual Medical Image Generation using Language-guided Stable Diffusion</a>
                                         </h4>
-                                        <p class="mb-1">In Review MIDL 2025</p>
+                                        <p class="text-dark mb-1"><strong>Amar Kumar</strong>, Anita Kriz, Mohammad Havaei, Tal Arbel</p>
+                                        <p class="mb-1">Accepted to MIDL 2025</p>
                                         <p class="mb-2">
                                             <a href="https://github.com/Amarkr1/PRISM" class="text-decoration-none" target="_blank"><i class="fab fa-github"></i> Source Code</a> | 
                                             <a href="https://amarkr1.github.io/PRISM" class="text-decoration-none" target="_blank"><i class="fas fa-globe"></i> Project Website</a> |
@@ -251,19 +255,81 @@
                                 </div>
                             </div>
 
+                            
+                            <div class="publication-entry mb-4 p-3 bg-light rounded shadow-sm">
+                                <div class="row">
+                                    <div class="col-md-12">
+                                        <h4>
+                                            <a href="#" class="link-primary text-decoration-none" >Leveraging Vision-Language Foundation Models to Reveal Hidden Image-Attribute Relationships in Medical Imaging</a>
+                                        </h4>
+                                        <p class="text-dark mb-1"><strong>Amar Kumar*</strong>, Anita Kriz*, Barak Pertzov, Tal Arbel</p>
+                                        <p class="mb-1">Accepted to CVPR Workshop (MIV) Proceedings 2025 </p>
+                                        <p class="mb-2">
+                                            <a href="#" class="text-decoration-none abstract-toggle" data-toggle="collapse" data-target="#abstract-mivcausal"><i class="fas fa-book-open"></i> Abstract</a>
+                                        </p>
+                                        <div id="abstract-mivcausal" class="collapse">
+                                            <div class="card card-body">
+                                                <p class="text-muted">
+                                                    Vision-language foundation models (VLMs) have shown impressive performance in guiding image generation through text, with emerging applications in medical imaging. In this work, we are the first to investigate the question: 'Can fine-tuned foundation models help identify critical, and possibly unknown, data properties?' By evaluating our proposed method on a chest x-ray dataset, we show that these models can generate high-resolution, precisely edited images compared to methods that rely on Structural Causal Models (SCMs) according to numerous metrics. For the first time, we demonstrate that fine-tuned VLMs can reveal hidden data relationships that were previously obscured due to available metadata granularity and model capacity limitations. Our experiments demonstrate both the potential of these models to reveal underlying dataset properties while also exposing the limitations of fine-tuned VLMs for accurate image editing and susceptibility to biases and spurious correlation.                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="publication-entry mb-4 p-3 bg-light rounded shadow-sm">
+                                <div class="row">
+                                    <div class="col-md-12">
+                                        <h4>
+                                            <a href="#" class="link-primary text-decoration-none" >Language-Guided Trajectory Traversal in Disentangled Stable Diffusion Latent Space for Factorized Medical Image Generation</a>
+                                        </h4>
+                                        <p class="text-dark mb-1">Zahra TehraniNasab*, <strong>Amar Kumar*</strong>, Tal Arbel</p>
+                                        <p class="mb-1">Accepted to CVPR Workshop (MIV) Proceedings 2025</p>
+                                        <p class="mb-2">
+                                            <a href="#" class="text-decoration-none abstract-toggle" data-toggle="collapse" data-target="#abstract-mivdis"><i class="fas fa-book-open"></i> Abstract</a>
+                                        </p>
+                                        <div id="abstract-mivdis" class="collapse">
+                                            <div class="card card-body">
+                                                <p class="text-muted">
+                                                    Text-to-image diffusion models have demonstrated a remarkable ability to generate photorealistic images from natural language prompts. These high-resolution, language-guided synthesized images are essential for the explainability of disease or exploring causal relationships. However, their potential for disentangling and controlling latent factors of variation in specialized domains like medical imaging remains under-explored. In this work, we present the first investigation of the power of pre-trained vision-language foundation models, once fine-tuned on medical image datasets, to perform latent disentanglement for factorized medical image generation and interpolation. Through extensive experiments on chest X-ray and skin datasets, we illustrate that fine-tuned, language-guided Stable Diffusion inherently learns to factorize key attributes for image generation, such as the patient's anatomical structures or disease diagnostic features. We devise a framework to identify, isolate, and manipulate key attributes through latent space trajectory traversal of generative models, facilitating precise control over medical image synthesis.
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Publication Entry - RL4Med -->
+                            <div class="publication-entry mb-4 p-3 bg-light rounded shadow-sm">
+                                <div class="row">
+                                    <div class="col-md-12">
+                                        <h4>
+                                            <a href="https://arxiv.org/abs/2503.15784" class="link-primary text-decoration-none" target="_blank">RL4Med-DDPO: Reinforcement Learning for Controlled Guidance Towards Diverse Medical Image Generation using Vision-Language Foundation Models</a>
+                                        </h4>
+                                        <p class="text-dark mb-1">Parham Saremi, <strong>Amar Kumar*</strong>, Mohammed Mohammed, Zahra TehraniNasab, Tal Arbel</p>
+                                        <p class="mb-1">In Review, 2025</p>
+                                        <p class="mb-2">
+                                            <a href="#" class="text-decoration-none abstract-toggle" data-toggle="collapse" data-target="#abstract-rl4med"><i class="fas fa-book-open"></i> Abstract</a>
+                                        </p>
+                                        <div id="abstract-rl4med" class="collapse">
+                                            <div class="card card-body">
+                                                <p class="text-muted">
+                                                    Vision-Language Foundation Models (VLFM) have shown a tremendous increase in performance in terms of generating high-resolution, photorealistic natural images. While VLFMs show a rich understanding of semantic content across modalities, they often struggle with fine-grained alignment tasks that require precise correspondence between image regions and textual descriptions a limitation in medical imaging, where accurate localization and detection of clinical features are essential for diagnosis and analysis. To address this issue, we propose a multi-stage architecture where a pre-trained VLFM provides a cursory semantic understanding, while a reinforcement learning (RL) algorithm refines the alignment through an iterative process that optimizes for understanding semantic context. The reward signal is designed to align the semantic information of the text with synthesized images. We demonstrate the effectiveness of our method on a medical imaging skin dataset where the generated images exhibit improved generation quality and alignment with prompt over the fine-tuned Stable Diffusion. We also show that the synthesized samples could be used to improve disease classifier performance for underrepresented subgroups through augmentation.
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
                             <!-- Publication Entry 2 -->
                             <div class="publication-entry mb-4 p-3 bg-light rounded shadow-sm">
                                 <div class="row">
-                                    <div class="col-md-3">
-                                        <!-- Clickable thumbnail image with link to open in new tab -->
-                                        <a href="assets/decodex/arch.jpeg" target="_blank" title="View full image">
-                                            <img src="assets/decodex/arch.jpeg" alt="DeCoDEx Thumbnail" class="img-fluid rounded mb-2 thumbnail-img">
-                                        </a>
-                                    </div>
-                                    <div class="col-md-9">
+                                    <div class="col-md-12">
                                         <h4>
                                             <a href="https://openreview.net/forum?id=M6CfJ5H7XH" class="link-primary text-decoration-none" target="_blank">DeCoDEx: Confounder Detector Guidance for Improved Diffusion-based Counterfactual Explanations</a>
                                         </h4>
+                                        <p class="text-dark mb-1">Nima Fathi*, <strong>Amar Kumar*</strong>, Brennan Nichyporuk, Mohammad Havaei, Tal Arbel</p>
                                         <p class="mb-1">Published at MIDL 2024</p>
                                         <p class="text-success font-weight-bold mb-2">Oral, Shortlist for the Best Paper Award</p>
                                         <p class="mb-2">
@@ -283,16 +349,11 @@
                             <!-- Publication Entry 3 -->
                             <div class="publication-entry mb-4 p-3 bg-light rounded shadow-sm">
                                 <div class="row">
-                                    <div class="col-md-3">
-                                        <!-- Clickable thumbnail image with link to open in new tab -->
-                                        <a href="assets/debiasing/workflow.jpeg" target="_blank" title="View full image">
-                                            <img src="assets/debiasing/workflow.jpeg" alt="Debiasing Counterfactuals Thumbnail" class="img-fluid rounded mb-2 thumbnail-img">
-                                        </a>
-                                    </div>
-                                    <div class="col-md-9">
+                                    <div class="col-md-12">
                                         <h4>
                                             <a href="https://link.springer.com/chapter/10.1007/978-3-031-45249-9_27" class="link-primary text-decoration-none" target="_blank">Debiasing Counterfactuals in the Presence of Spurious Correlations</a>
                                         </h4>
+                                        <p class="text-dark mb-1"><strong>Amar Kumar</strong>, Nima Fathi, Raghav Mehta, Brennan Nichyporuk, Jean-Pierre R. Falet, Sotirios Tsaftaris, Tal Arbel </p>
                                         <p class="mb-1">Published at FAIMI, MICCAI 2023</p>
                                         <p class="text-success font-weight-bold mb-2">Best Oral Presentation Award</p>
                                         <p class="mb-2">
@@ -312,16 +373,11 @@
                             <!-- Publication Entry 4 -->
                             <div class="publication-entry mb-4 p-3 bg-light rounded shadow-sm">
                                 <div class="row">
-                                    <div class="col-md-3">
-                                        <!-- Clickable thumbnail image with link to open in new tab -->
-                                        <a href="assets/cfms/arch.png" target="_blank" title="View full image">
-                                            <img src="assets/cfms/arch.png" alt="Personalized Predictive Image Markers Thumbnail" class="img-fluid rounded mb-2 thumbnail-img">
-                                        </a>
-                                    </div>
-                                    <div class="col-md-9">
+                                    <div class="col-md-12">
                                         <h4>
                                             <a href="https://link.springer.com/chapter/10.1007/978-3-031-19660-7_11" class="link-primary text-decoration-none" target="_blank">Counterfactual Image Synthesis for Discovery of Personalized Predictive Image Markers</a>
                                         </h4>
+                                        <p class="text-dark mb-1"><strong>Amar Kumar</strong>, Anjun Hu, Brennan Nichyporuk, Jean-Pierre R. Falet, Douglas L. Arnold, Sotirios Tsaftaris, Tal Arbel </p>
                                         <p class="mb-1">Published at MIABID, MICCAI 2022</p>
                                         <p class="mb-2">
                                             <a href="#" class="text-decoration-none abstract-toggle" data-toggle="collapse" data-target="#abstract-4"><i class="fas fa-book-open"></i> Abstract</a>
@@ -336,6 +392,7 @@
                                     </div>
                                 </div>
                             </div>
+
                         </div>
                     </div>
                 </div>
@@ -344,18 +401,7 @@
         </div>
     </div>
 
-    <!-- Simple centered footer with just the horizontal line and visitor count -->
-    <div class="container">
-        <div class="row">
-            <div class="col-md-12 text-center">
-                <hr class="my-4" />
-                <p class="text-muted mb-4" style="font-family: montserrat, sans-serif;">
-                    <i class="fas fa-chart-line mr-2"></i><span id="visitor-count" class="font-weight-bold">Loading...</span> visitors on this webpage
-                </p>
-            </div>
-        </div>
-    </div>
-
+    
     <!-- jQuery (required for bootstrap and collapse functionality) -->
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
