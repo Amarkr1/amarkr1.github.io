@@ -1,11 +1,12 @@
 /* Original styles */
 body {
     font-family: Arial, sans-serif;
-    line-height: 1.6;
+    line-height: 1.5;
     margin: 0;
     padding: 0;
     color: #333;
     padding-top: 70px; /* Account for fixed navbar */
+    font-size: 0.95rem; /* Reduced base font size */
 }
 
 .container {
@@ -32,6 +33,7 @@ footer {
     padding: 1rem 0;
     margin-top: 20px;
     font-family: montserrat, sans-serif;
+    font-size: 0.9rem; /* Reduced footer font size */
 }
 
 /* Footer styles */
@@ -48,7 +50,7 @@ hr {
 
 #visitor-count {
     color: #007bff;
-    font-size: 1.2rem;
+    font-size: 1.1rem; /* Reduced from 1.2rem */
 }
 
 /* New styles for enhanced publications section and overall appearance */
@@ -62,6 +64,20 @@ h4.montserrat-font {
     hyphens: manual;
     word-wrap: break-word;
     word-break: break-word;
+}
+
+/* Reduced heading sizes */
+h2 {
+    font-size: 1.8rem; /* Reduced from default */
+}
+
+h4 {
+    font-size: 1.2rem; /* Reduced from default */
+}
+
+/* Reduced size for lead text */
+.lead {
+    font-size: 1rem; /* Reduced from default */
 }
 
 /* Smooth scrolling for anchor links */
@@ -88,6 +104,7 @@ html {
 .navbar-brand {
     font-family: montserrat, sans-serif;
     font-weight: 600;
+    font-size: 1.2rem; /* Reduced from default */
 }
 
 .nav-item.active .nav-link {
@@ -97,6 +114,7 @@ html {
 
 .nav-link {
     transition: color 0.3s ease;
+    font-size: 0.95rem; /* Reduced from default */
 }
 
 .nav-link:hover {
@@ -115,6 +133,11 @@ html {
     border-left: 3px solid #007bff;
 }
 
+/* Reduced publication title size */
+.publication-entry h4 {
+    font-size: 1.1rem; /* Reduced from default */
+}
+
 .citation-metrics {
     display: flex;
     flex-direction: column;
@@ -123,7 +146,7 @@ html {
 .badge {
     display: inline-block;
     padding: 0.25em 0.4em;
-    font-size: 75%;
+    font-size: 70%; /* Reduced from 75% */
     font-weight: 700;
     line-height: 1;
     text-align: center;
@@ -147,6 +170,7 @@ html {
     color: #6c757d;
     cursor: pointer;
     transition: color 0.3s ease;
+    font-size: 0.9rem; /* Reduced from default */
 }
 
 .abstract-toggle:hover {
@@ -163,7 +187,7 @@ html {
 
 .card-body {
     padding: 1rem;
-    font-size: 0.95rem;
+    font-size: 0.85rem; /* Reduced from 0.95rem */
     line-height: 1.6;
 }
 
@@ -175,54 +199,18 @@ html {
     padding-bottom: 0.5rem;
 }
 
-/* Research interests and education styling */
-.list-item {
-    margin-bottom: 0.5rem;
+/* Research interests styling */
+#research {
+    font-size: 1.4rem; /* Increased font size for Research Interests heading */
 }
 
-/* Enhanced Research Interests Section */
-.research-interests-section {
-    background-color: #f9f9f9;
-    border-radius: 8px;
-    padding: 20px;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.05);
-    margin-bottom: 30px;
+#research + .row .lead {
+    font-size: 1.05rem; /* Increased font size for Research Interests list items */
 }
 
-.research-interests-section h4 {
-    border-bottom: 2px solid #007bff;
-    padding-bottom: 10px;
-    margin-bottom: 20px;
-    color: #343a40;
-    font-family: montserrat, sans-serif;
-}
-
-.research-list {
-    list-style-type: none;
-    padding-left: 0;
-}
-
-.research-item {
-    background-color: #fff;
-    margin-bottom: 15px;
-    padding: 12px 15px;
-    border-radius: 6px;
-    transition: all 0.3s ease;
-    border-left: 3px solid #007bff;
-    font-weight: 500;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.05);
-    display: flex;
-    align-items: center;
-}
-
-.research-item:hover {
-    transform: translateX(5px);
-    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
-}
-
-.research-item i {
-    margin-right: 10px;
-    color: #007bff;
+#research + .row li.list-item {
+    font-size: 1.05rem; /* Ensure list items themselves have increased size */
+    margin-bottom: 0.6rem; /* Add a bit more spacing between items */
 }
 
 /* Image styling */
@@ -249,6 +237,11 @@ html {
     text-decoration: underline;
 }
 
+/* Text size utility classes */
+.text-muted {
+    font-size: 0.85rem; /* Reduced from default */
+}
+
 /* Responsive adjustments */
 @media (max-width: 768px) {
     .publication-entry .row {
@@ -269,26 +262,15 @@ html {
     
     body {
         padding-top: 56px; /* Smaller padding for mobile navbar */
+        font-size: 0.9rem; /* Slightly smaller on mobile */
     }
     
-    /* Mobile adjustments for research interests */
-    .research-item {
-        margin-bottom: 10px;
-        padding: 10px;
+    h2 {
+        font-size: 1.6rem; /* Smaller on mobile */
     }
     
-    .research-interests-section {
-        padding: 15px;
-    }
-}
-
-@media (max-width: 576px) {
-    .research-interests-section .row {
-        flex-direction: column;
-    }
-    
-    .research-interests-section .col-md-6 {
-        margin-bottom: 10px;
+    .lead {
+        font-size: 0.95rem; /* Smaller on mobile */
     }
 }
 
